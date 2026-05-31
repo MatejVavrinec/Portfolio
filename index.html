@@ -3,111 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje Portfolio</title>
+    <title>Matej Vavrinec - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1> Moje Portfolio</h1>
-            <p class="tagline">Junior Web Developer | HTML | CSS | JavaScript</p>
+            <div class="logo">Matej Vavrinec</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">O mne</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">O mne</a></li>
-                <li><a href="#skills">Zručnosti</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <section id="about">
-        <h2>O mne</h2>
-        <p>Ahoj! Volám sa Matej Vavrinec, mám 17 rokov a študujem na Strednej priemyselnej škole informačných technológií a Gymnázia (SPŠITKNMaG). Som začiatočník v oblasti webového vývoja a učím sa HTML, CSS a JavaScript. Robím v týchto technológiách a veľmi ma to baví - vytváranie pekných a funkčných webových stránok je moja vášeň!</p>
-    </section>
-
-    <section id="skills">
-        <h2>Moje Zručnosti</h2>
-        <div class="skills-container">
-            <div class="skill-card skill-html">
-                <h3> HTML</h3>
-                <p>Tvorba štruktoravaného HTML kódu.</p>
-            </div>
-            <div class="skill-card skill-css">
-                <h3> CSS</h3>
-                <p>Styling, responzívny dizajn, flexbox a grid</p>
-            </div>
-            <div class="skill-card skill-js">
-                <h3> JavaScript</h3>
-                <p>Základna funkcionalita stránky</p>
-            </div>
-            <div class="skill-card skill-design">
-                <h3> Dizajn</h3>
-                <p>Tvorba pekných a používateľsky prívetivých rozhraní</p>
-            </div>
+    <section id="about" class="popisna-sekcia">
+        <h1>Ahoj</h1>
+        <p class="podtitul">Som Junior Web Developer</p>
+        <p class="popis-text">Ahoj! Volám sa Matej Vavrinec, mám 17 rokov a študujem na Strednej priemyselnej škole informačných technológií a Gymnázia (SPŠITKNMaG). Som začiatočník v oblasti webového vývoja a učím sa HTML, CSS a JavaScript. Robím v týchto technológiách a veľmi ma to baví.</p>
+        <div class="technologie">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="projects-section">
         <h2>Moje Projekty</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">📱</div>
-                <h3>Resident Array</h3>
-                <p>Top-down hra urobená v JavaScripte, kde je úloha pozbierať mince a nájsť východ.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS</span>
+        <div class="projects-container">
+            <a href="https://github.com/MatejVavrinec/Resident-Array" class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-content">
+                    <h3>Resident Array</h3>
+                    <p>Top-down hra urobená v JavaScripte, kde je úloha pozbierať mince a nájsť východ.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-card">
-                <div class="project-icon">🎨</div>
-                <h3>Portfolio Stránka</h3>
-                <p>Moja prvá portfolio stránka s moderným dizajnom a responzívnym layoutom. Prezentácia mojich projektov a zručností.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
+            <a href="https://github.com/MatejVavrinec/Portfolio" class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3>Portfolio Stránka</h3>
+                    <p>Moja prvá portfolio stránka s moderným dizajnom. Prezentácia mojich projektov a zručností.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-card">
-                <div class="project-icon">🎮</div>
-                <h3>Hra Kameň Papier Nožnice</h3>
-                <p>Klasická hra proti počítaču. Naučila ma pracovať s random funkciami a logike hry. Podľa skóre vidno kto vyhráva!</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS</span>
+            <a href="https://github.com/MatejVavrinec/Rock_Paper_Scissors_" class="project-card">
+                <div class="project-image">✂️</div>
+                <div class="project-content">
+                    <h3>Hra Kameň Papier Nožnice</h3>
+                    <p>Klasická hra proti počítaču. Naučila ma pracovať s random funkciami a logike hry. Podľa skóre vidno kto vyhráva!</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-          
-
-            <div class="project-card">
-                <div class="project-icon">🚗</div>
-                <h3>Autosalón MKJ</h3>
-                <p>Webstránka pre autosalón s možnosťou prehliadania vozidiel a rezervácie servisu.</p>
-                <div class="project-tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
+            <a href="https://github.com/MatejVavrinec/AutosalonMKJ" class="project-card">
+                <div class="project-image">🚗</div>
+                <div class="project-content">
+                    <h3>Autosalón MKJ</h3>
+                    <p>Webstránka pre autosalón s možnosťou prehliadania vozidiel a rezervácie servisu.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
                 </div>
-            </div>
+            </a>
+
+            <a href="https://github.com/MatejVavrinec/Recepty_Jedal" class="project-card">
+                <div class="project-image">🥪</div>
+                <div class="project-content">
+                    <h3>Recepty od Sendviča</h3>
+                    <p>Webstránka so zbierkou receptov na jedlo. Obsahuje rôzne recepty s návodmi na prípravu a zoznamom ingrediencií.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/MatejVavrinec/Stavebna_firma" class="project-card">
+                <div class="project-image">🏗️</div>
+                <div class="project-content">
+                    <h3>Stavebná Firma</h3>
+                    <p>Webstránka stavebnej firmy s prezentáciou služieb, galériou realizovaných projektov a kontaktom na firmu.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Kontakt</h2>
-        <div class="contact-links">
-            <a href="mailto:mvavrinec2008@gmail.com" class="contact-btn email">📧 mvavrinec2008@gmail.com</a>
-            <a href="https://github.com/MatejVavrinec" class="contact-btn github">🐙 GitHub</a>
+        <div class="contact-info">
+            <a href="mailto:mvavrinec2008@gmail.com" class="contact-link">📧 mvavrinec2008@gmail.com</a>
+            <a href="https://github.com/MatejVavrinec" class="contact-link">🐙 GitHub</a>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Moje Portfolio</p>
+        <p>&copy; 2026 Matej Vavrinec. Všetky práva vyhradené.</p>
     </footer>
 </body>
 </html>
